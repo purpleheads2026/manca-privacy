@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Manca!</title>
+<style>
+  :root{
+    --rosso:#E2503C; --rosso-cupo:#C43F2D; --carta:#FFF1DE; --piega:#F0DCBF;
+    --superficie:#FFECD6; --inchiostro:#2B1A14; --tenue:#8A6B5D; --fondo:#FFF6EA;
+    --verde:#6E9A4E;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--fondo); color:var(--inchiostro);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .foglio{max-width:44rem; margin:0 auto; padding:3rem 1.5rem 5rem}
+  header{text-align:center; margin-bottom:3rem}
+  header img{width:200px; height:auto}
+  h1{font-size:1.9rem; margin:2.5rem 0 .4rem; letter-spacing:-.02em}
+  h2{font-size:1.2rem; margin:2.5rem 0 .5rem; color:var(--rosso-cupo)}
+  p,li{color:#3d2a22}
+  .occhiello{color:var(--tenue); font-size:.95rem; margin:0}
+  .sommario{
+    background:var(--superficie); border:1px solid var(--piega);
+    border-radius:1.1rem; padding:1.2rem 1.4rem; margin:2rem 0;
+  }
+  .sommario strong{color:var(--rosso-cupo)}
+  ul{padding-left:1.2rem}
+  li{margin:.35rem 0}
+  code{background:var(--piega); padding:.1rem .35rem; border-radius:.3rem; font-size:.9em}
+  footer{
+    margin-top:3.5rem; padding-top:1.5rem; border-top:1px solid var(--piega);
+    color:var(--tenue); font-size:.9rem;
+  }
+  a{color:var(--rosso-cupo)}
+  @media (prefers-color-scheme: dark){
+    :root{--fondo:#17110E; --superficie:#241A15; --piega:#3A2A22; --inchiostro:#FFF1DE; --tenue:#B29385; --rosso-cupo:#F0705C}
+    p,li{color:#EADCD0}
+  }
+</style>
+</head>
+<body>
+<div class="foglio">
+
+<header>
+  <img src="lockup.png" alt="Manca!">
+</header>
+
+<p class="occhiello">In vigore dal 26 agosto 2026</p>
+<h1>Privacy</h1>
+
+<div class="sommario">
+  <p style="margin:0"><strong>In due righe:</strong> Manca! non ha server. Liste, spesa,
+  prezzi e posizione restano sul tuo iPhone e nel tuo iCloud privato. Chi ha scritto
+  l'app non li vede, non li raccoglie e non ha modo di leggerli.</p>
+</div>
+
+<h2>Chi tratta i dati</h2>
+<p>Manca! è sviluppata da Samuel Ravani. Per qualsiasi domanda su questo documento:
+<a href="mailto:purpleheads2026@gmail.com">purpleheads2026@gmail.com</a>.</p>
+
+<h2>Dove stanno i tuoi dati</h2>
+<p>Sul dispositivo e nel <strong>tuo</strong> iCloud, tramite CloudKit. Non esiste
+alcun server dello sviluppatore: nessun dato viene inviato a noi, perché non c'è
+un «noi» dove possa arrivare. Quando condividi una lista, quella lista diventa
+visibile solo alle persone che inviti, sempre dentro iCloud.</p>
+
+<h2>Cosa tratta l'app</h2>
+<ul>
+  <li><strong>Liste, dispensa, spese e prezzi</strong> che inserisci tu, comprese le
+  quantità e i negozi.</li>
+  <li><strong>Il tuo nome</strong>, che scrivi tu o che arriva da Sign in with Apple.
+  Serve a firmare le spunte, così in una lista di famiglia si capisce chi ha preso
+  cosa. Resta nel tuo iCloud.</li>
+  <li><strong>La posizione</strong>, solo se accendi gli avvisi di famiglia. Vedi il
+  paragrafo dedicato.</li>
+  <li><strong>Le foto degli scontrini</strong>: vengono lette sul dispositivo per
+  ricavarne prezzi e categorie. L'immagine non viene salvata dall'app né inviata da
+  nessuna parte; resta nel tuo rullino se scegli di conservarla.</li>
+</ul>
+
+<h2>La posizione, in dettaglio</h2>
+<p>Se accendi gli avvisi di famiglia, l'app mette un'area di 150 metri attorno ai
+soli negozi che hai deciso di seguire. Quando attraversi quell'area, iOS avvisa
+l'app e viene scritto un dato semplice — «questa persona è entrata in questo
+negozio, a quest'ora» — nella lista che stai condividendo, così chi partecipa può
+aggiungere qualcosa prima che tu sia alla cassa.</p>
+<ul>
+  <li>Non viene registrato dove sei negli altri momenti: fuori da quelle aree l'app
+  non sa e non chiede nulla.</li>
+  <li>Quel dato lo vedono <strong>solo</strong> le persone che partecipano alla lista
+  condivisa. Nessun altro, sviluppatore compreso.</li>
+  <li>Puoi spegnere tutto in qualsiasi momento da Impostazioni, nell'app o in quelle
+  di iOS.</li>
+</ul>
+
+<h2>Cosa non facciamo</h2>
+<ul>
+  <li>Nessun tracciamento, nessuna pubblicità, nessun profilo pubblicitario.</li>
+  <li>Nessun servizio di analisi e <strong>nessuna libreria di terze parti</strong>:
+  l'app non ha dipendenze esterne di alcun tipo.</li>
+  <li>Nessuna vendita o cessione di dati: non li abbiamo, quindi non c'è niente da
+  cedere.</li>
+</ul>
+
+<h2>Sign in with Apple</h2>
+<p>È facoltativo: puoi usare l'app scrivendo solo il tuo nome. Se lo usi, Apple
+comunica all'app il tuo nome e un identificativo stabile, che vengono conservati nel
+tuo iCloud e servono a riconoscere la stessa persona fra i tuoi dispositivi. La tua
+mail non viene richiesta.</p>
+
+<h2>I dati di chi condivide con te</h2>
+<p>Quando accetti l'invito a una lista, tu e le altre persone vedete gli stessi
+articoli, gli stessi prezzi e le presenze nei negozi. Chi possiede la lista può
+smettere di condividerla, e chiunque può uscirne: dal momento in cui esci non vedi
+più niente di quella lista.</p>
+
+<h2>Quanto restano e come si cancellano</h2>
+<p>I dati restano finché li tieni tu. Per cancellarli: elimina liste e articoli
+dall'app, oppure disinstalla l'app e rimuovi i suoi dati da
+<em>Impostazioni → il tuo nome → iCloud → Gestisci spazio</em>. Non serve chiedere a
+noi, e noi non possiamo farlo per te: non abbiamo accesso.</p>
+
+<h2>I tuoi diritti</h2>
+<p>Il Regolamento europeo (GDPR) ti dà diritto di accesso, rettifica, cancellazione,
+limitazione e portabilità. Qui li eserciti direttamente sul dispositivo, perché i dati
+sono già e solo tuoi. Se hai bisogno di aiuto, scrivi all'indirizzo qui sopra.</p>
+
+<h2>Bambini</h2>
+<p>Manca! non è rivolta a bambini sotto i 13 anni e non raccoglie
+consapevolmente dati di minori.</p>
+
+<h2>Modifiche</h2>
+<p>Se questo documento cambia, la data in cima cambia con lui. Le versioni
+precedenti restano nella cronologia pubblica del documento.</p>
+
+<footer>
+  Manca! — la lista della spesa che avete in due.<br>
+  © 2026 Samuel Ravani
+</footer>
+
+</div>
+</body>
+</html>
